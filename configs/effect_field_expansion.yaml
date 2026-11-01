@@ -1,0 +1,26 @@
+output: artifacts/effect_field_expansion.json
+raw_report: artifacts/effect_field_expansion_raw.json
+cache_root: artifacts/effect_field_expansion_runs
+protocol_document: docs/effect_field_expansion_protocol.md
+development_only: true
+
+effect_field:
+  quantiles: [0.90, 0.95, 0.99]
+  minimum_impact: 0.000000000001
+  active_threshold: 0.000000000001
+  node_projection_dimension: 256
+  permutations: 1000
+  ridge_alpha: 1.0
+  primary_candidate: mask_field
+  candidate_names: [raw_field, mask_field, continuous_plus_mask]
+
+expansion:
+  replication_cells:
+    - citationfull_citeseer/thesis_gcn
+    - citationfull_citeseer/residual_gcn
+  mlp_control_cells:
+    - citationfull_citeseer/matched_mlp
+    - amazon_computers/matched_mlp
+    - roman_empire/matched_mlp
+  paired_gnn_backbones: [thesis_gcn, residual_gcn]
+  datasets: [citationfull_citeseer, amazon_computers, roman_empire]

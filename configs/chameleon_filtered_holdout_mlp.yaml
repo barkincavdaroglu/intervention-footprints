@@ -1,0 +1,20 @@
+study: {id: final_interpretation_holdout_v1, phase: confirmatory_blind}
+evaluation_splits: [validation]
+experiment:
+  name: chameleon_filtered_holdout_mlp
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+data:
+  name: chameleon_filtered
+  loader: heterophilous_npz
+  root: data/raw
+  filename: chameleon_filtered.npz
+  url: https://raw.githubusercontent.com/yandex-research/heterophilous-graphs/a431395582e929d88271309716bea4fe24ce6318/data/chameleon_filtered.npz
+  normalize_features: false
+  num_classes: 5
+  test_label_access: withheld
+  verify_expected_stats: true
+  expected_stats: {num_nodes: 890, num_raw_directed_edges: 8854, num_directed_edges: 17708, num_features: 2325, num_classes: 5, num_predefined_splits: 10}
+  split_mode: predefined
+model: {type: mlp, hidden_channels: [32, 32], dropout: 0.5}
+training: {device: cpu, optimizer: adam, learning_rate: 0.01, weight_decay: 0.0005, max_epochs: 500, patience: 100, min_delta: 0.0001, num_threads: 1}
+output: {root: artifacts/final_holdout/chameleon_filtered/matched_mlp}

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gnn-neuron-repair"
+version = "0.1.0"
+description = "Reproducible GNN baselines and neuron-localization experiments"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.4",
+  "scipy>=1.11",
+  "torch>=2.2",
+]
+
+[project.scripts]
+gnn-baseline = "gnn_repair.train:main"
+gnn-effect-field-gate = "gnn_repair.effect_field_gate:main"
+gnn-effect-field-actionability = "gnn_repair.effect_field_actionability:main"
+gnn-effect-field-repair-interactions = "gnn_repair.effect_field_repair_interactions:main"
+gnn-effect-field-expansion = "gnn_repair.effect_field_expansion:main"
+gnn-effect-field-actionability-replication = "gnn_repair.effect_field_actionability_replication:main"
+gnn-final-holdout-raw = "gnn_repair.final_holdout_raw:main"
+gnn-final-holdout-effect = "gnn_repair.final_holdout_effect_field:main"
+gnn-final-holdout-actionability = "gnn_repair.final_holdout_actionability:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

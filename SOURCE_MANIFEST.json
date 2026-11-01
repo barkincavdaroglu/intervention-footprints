@@ -1,0 +1,581 @@
+{
+  "schema": "research-reproduction-package/1",
+  "date": "2026-11-01",
+  "scope": "Integrity and source provenance for the public reproduction package.",
+  "source_identity_note": "Original source hashes identify archival inputs. Current sha256 fields authenticate the distributed files, including sanitized derivatives.",
+  "files": [
+    {
+      "file": ".gitignore",
+      "sha256": "a029a51b0669b961ddea970f03a09e3a92e38995f909d8e1c2331fae7fa138ed",
+      "bytes": 460
+    },
+    {
+      "file": ".python-version",
+      "sha256": "024c0bb8b6e96b9a88fed434e6ed551d2d1d31c7dc6fc4e663e0d7f4337dc038",
+      "bytes": 7
+    },
+    {
+      "file": "README.md",
+      "sha256": "a4e41cbd7e451346ea480aa13cade4329847a849f6b06582325ed7228df747bd",
+      "bytes": 4421
+    },
+    {
+      "file": "artifacts/effect_field_actionability.json",
+      "sha256": "64c04332bd299e49350af5b0aa7492753c77fad7e8731186123ec56f26b493eb",
+      "bytes": 564887,
+      "source_identity": "source://footprint-study/artifacts/effect_field_actionability.json",
+      "original_source_sha256": "cddfcaf646f3782d09dea97a878d784b6c1ef09dbc2495af9dceab905d7f3bcc"
+    },
+    {
+      "file": "artifacts/effect_field_actionability_replication.json",
+      "sha256": "f0ed2eef271a40750d5ffb5873a7fb9942141a8a767d03eea97c208b8cbdbaa0",
+      "bytes": 113591,
+      "source_identity": "source://footprint-study/artifacts/effect_field_actionability_replication.json",
+      "original_source_sha256": "a6476f89fd0ea9a0a507d9ab5e21f32a897bbb2e6f3f3f01021d403795c0ce98"
+    },
+    {
+      "file": "artifacts/effect_field_expansion.json",
+      "sha256": "80de9a9c0829cbb4ab4b98661fd1bafcd6aa6a2317f35ffbfa12973ae3ee3b61",
+      "bytes": 6762483,
+      "source_identity": "source://footprint-study/artifacts/effect_field_expansion.json",
+      "original_source_sha256": "1785bfd302d887e598779e1f90cdd8d807afeab655ece81f8bd3ab52613f1fd9"
+    },
+    {
+      "file": "artifacts/effect_field_expansion_raw.json",
+      "sha256": "fccf7eabc08511d896fb164f4d035a36cb679c57aa4ab78e0be57f0a13905896",
+      "bytes": 2093749,
+      "source_identity": "source://footprint-study/artifacts/effect_field_expansion_raw.json",
+      "original_source_sha256": "66d4c06e5536db819af1c7704484b419f4613039fa6f2b73ead1bdb00aa9111a"
+    },
+    {
+      "file": "artifacts/effect_field_gate.json",
+      "sha256": "333ca0b0c579bea4e0e35897a55513ee5911c4566791dc98f0d509193e65641a",
+      "bytes": 19986938,
+      "source_identity": "source://footprint-study/artifacts/effect_field_gate.json",
+      "original_source_sha256": "3e135a7c31adf14dcb5cf5fcc5caa50dfae18e19b05195491e678805f13f5ece"
+    },
+    {
+      "file": "artifacts/effect_field_repair_interactions_v2.json",
+      "sha256": "34ab7422e8042d3c72f322e91cbb0847c82775dc07f18bb2e3aade8b6237f4b3",
+      "bytes": 8812033,
+      "source_identity": "source://footprint-study/artifacts/effect_field_repair_interactions_v2.json",
+      "original_source_sha256": "ec96db4663edb4b3aadc723d44db3817e2aad2884f6ce543fc4b023c2a324074"
+    },
+    {
+      "file": "artifacts/final_holdout/actionability.json",
+      "sha256": "b1af3c6bb6a87e788ac84e71eca669854c7da1495ad85fd007fb8e31c875b166",
+      "bytes": 327052,
+      "source_identity": "source://footprint-study/artifacts/final_holdout/actionability.json",
+      "original_source_sha256": "dbcfeb609c1b5048893f354c68ff30deb57e904ffb70d320d7843c49b52fbfcf"
+    },
+    {
+      "file": "artifacts/final_holdout/effect_field.json",
+      "sha256": "5cced75a0b3f4bce6bf2b056b4191ce89e28ec750846a2adcf57cac9240fe078",
+      "bytes": 19638590,
+      "source_identity": "source://footprint-study/artifacts/final_holdout/effect_field.json",
+      "original_source_sha256": "30ae6c7ba9cdf4b590deff4641c54639a9e12ea6c83bc9a4bf376db2947f7648"
+    },
+    {
+      "file": "artifacts/final_holdout/raw_effects.json",
+      "sha256": "d59c3135c1407b02dd967c5ae12f46d7cd75c7c1f9b5224f0d108f1075b94994",
+      "bytes": 1296575,
+      "source_identity": "source://footprint-study/artifacts/final_holdout/raw_effects.json",
+      "original_source_sha256": "b56b8312a6cd2798b88537dd3da71c2dc138009e54e1042048cd52614399ed05"
+    },
+    {
+      "file": "configs/amazon_computers_gcn.yaml",
+      "sha256": "ae0949d349ee584f06fa1f319004c63b838ba3b3670755eabdac4289dc681660",
+      "bytes": 782,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/amazon_computers_gcn.yaml",
+      "original_source_sha256": "ae0949d349ee584f06fa1f319004c63b838ba3b3670755eabdac4289dc681660"
+    },
+    {
+      "file": "configs/amazon_computers_mlp.yaml",
+      "sha256": "a2f73d1fbcbe7d8f5ccfe2cc70464e94b430701f1eb47eaa52a0811a95f81ecb",
+      "bytes": 805,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/amazon_computers_mlp.yaml",
+      "original_source_sha256": "a2f73d1fbcbe7d8f5ccfe2cc70464e94b430701f1eb47eaa52a0811a95f81ecb"
+    },
+    {
+      "file": "configs/amazon_computers_residual_gcn.yaml",
+      "sha256": "ff0600c533b8643ae359bcbbc1d421c99f51a2c35274abd825ae57c40dd2eea0",
+      "bytes": 866,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/amazon_computers_residual_gcn.yaml",
+      "original_source_sha256": "ff0600c533b8643ae359bcbbc1d421c99f51a2c35274abd825ae57c40dd2eea0"
+    },
+    {
+      "file": "configs/chameleon_filtered_holdout_gcn.yaml",
+      "sha256": "137f86fe7031de8f22585406e4950d44f5327d50c107525ade55e2996c5af605",
+      "bytes": 1021,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/chameleon_filtered_holdout_gcn.yaml",
+      "original_source_sha256": "137f86fe7031de8f22585406e4950d44f5327d50c107525ade55e2996c5af605"
+    },
+    {
+      "file": "configs/chameleon_filtered_holdout_mlp.yaml",
+      "sha256": "5c85ce5f594151cdedd6d225dc1d577a3be7a7433c9430e38a8e7ad2c646aba1",
+      "bytes": 1022,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/chameleon_filtered_holdout_mlp.yaml",
+      "original_source_sha256": "5c85ce5f594151cdedd6d225dc1d577a3be7a7433c9430e38a8e7ad2c646aba1"
+    },
+    {
+      "file": "configs/chameleon_filtered_holdout_residual_gcn.yaml",
+      "sha256": "ba050e683c56e449074b9e52745dd15a3cfb605a651324f1c4d0cbf07332aa93",
+      "bytes": 1073,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/chameleon_filtered_holdout_residual_gcn.yaml",
+      "original_source_sha256": "ba050e683c56e449074b9e52745dd15a3cfb605a651324f1c4d0cbf07332aa93"
+    },
+    {
+      "file": "configs/citeseer_gcn.yaml",
+      "sha256": "aea53da3109852602e4492986a5b52dffba277ff2c51d0f8db033fe6f69a48fc",
+      "bytes": 776,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/citeseer_gcn.yaml",
+      "original_source_sha256": "aea53da3109852602e4492986a5b52dffba277ff2c51d0f8db033fe6f69a48fc"
+    },
+    {
+      "file": "configs/citeseer_mlp.yaml",
+      "sha256": "b841e5aec68dd4fc350a51e4ebc5af46c5f56fe5bca6ad706ad4da885f7dfb76",
+      "bytes": 799,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/citeseer_mlp.yaml",
+      "original_source_sha256": "b841e5aec68dd4fc350a51e4ebc5af46c5f56fe5bca6ad706ad4da885f7dfb76"
+    },
+    {
+      "file": "configs/citeseer_residual_gcn.yaml",
+      "sha256": "8872c308345208a7ce401e33e9bf013d78c2de0895ed82dd9bd6e0e579f1ee1a",
+      "bytes": 860,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/citeseer_residual_gcn.yaml",
+      "original_source_sha256": "8872c308345208a7ce401e33e9bf013d78c2de0895ed82dd9bd6e0e579f1ee1a"
+    },
+    {
+      "file": "configs/cora_ml_holdout_gcn.yaml",
+      "sha256": "f04af69819e698e8ba99fbbf59d4cfa9db50c252336522b2a801a87d028c98e8",
+      "bytes": 980,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/cora_ml_holdout_gcn.yaml",
+      "original_source_sha256": "f04af69819e698e8ba99fbbf59d4cfa9db50c252336522b2a801a87d028c98e8"
+    },
+    {
+      "file": "configs/cora_ml_holdout_mlp.yaml",
+      "sha256": "05c52803d21f6211be4cf4e099eab53c365281b207fbdd7168bd4bc024ede316",
+      "bytes": 981,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/cora_ml_holdout_mlp.yaml",
+      "original_source_sha256": "05c52803d21f6211be4cf4e099eab53c365281b207fbdd7168bd4bc024ede316"
+    },
+    {
+      "file": "configs/cora_ml_holdout_residual_gcn.yaml",
+      "sha256": "5cd400dc0bba8787fe3436d8065afae58e3040612f47cb1e46db933401cd7044",
+      "bytes": 1032,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/cora_ml_holdout_residual_gcn.yaml",
+      "original_source_sha256": "5cd400dc0bba8787fe3436d8065afae58e3040612f47cb1e46db933401cd7044"
+    },
+    {
+      "file": "configs/effect_field_actionability.yaml",
+      "sha256": "cf41b46528fed1a9643370d604dfffba01c56329f4d1b696da7be8f3a4d594a5",
+      "bytes": 456,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/effect_field_actionability.yaml",
+      "original_source_sha256": "cf41b46528fed1a9643370d604dfffba01c56329f4d1b696da7be8f3a4d594a5"
+    },
+    {
+      "file": "configs/effect_field_actionability_replication.yaml",
+      "sha256": "3710ffa358f37ea632fa949d8ebe4aed4b586b01751ab23e967b0cb62dec7931",
+      "bytes": 579,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/effect_field_actionability_replication.yaml",
+      "original_source_sha256": "3710ffa358f37ea632fa949d8ebe4aed4b586b01751ab23e967b0cb62dec7931"
+    },
+    {
+      "file": "configs/effect_field_expansion.yaml",
+      "sha256": "4c059f7e88aa5c5cf6d68299e8158d5b781b612dd9421e9dab3d69e635ae2477",
+      "bytes": 876,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/effect_field_expansion.yaml",
+      "original_source_sha256": "4c059f7e88aa5c5cf6d68299e8158d5b781b612dd9421e9dab3d69e635ae2477"
+    },
+    {
+      "file": "configs/effect_field_expansion_raw.yaml",
+      "sha256": "c8324b2c6426f33db7e33ed63074b15b606e219f3c3e771ec7513630c533c8ed",
+      "bytes": 1564,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/effect_field_expansion_raw.yaml",
+      "original_source_sha256": "c8324b2c6426f33db7e33ed63074b15b606e219f3c3e771ec7513630c533c8ed"
+    },
+    {
+      "file": "configs/effect_field_pivot.yaml",
+      "sha256": "6da6df16a4cb68582798dcfd8f152164af877dc1d002bb709ffec1261c45fe52",
+      "bytes": 501,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/effect_field_pivot.yaml",
+      "original_source_sha256": "6da6df16a4cb68582798dcfd8f152164af877dc1d002bb709ffec1261c45fe52"
+    },
+    {
+      "file": "configs/effect_field_repair_interactions.yaml",
+      "sha256": "38a9e676e8a8f4e6cdeaf1e54f1fb182e510a31074dc214088204adda9decbac",
+      "bytes": 756,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/effect_field_repair_interactions.yaml",
+      "original_source_sha256": "38a9e676e8a8f4e6cdeaf1e54f1fb182e510a31074dc214088204adda9decbac"
+    },
+    {
+      "file": "configs/final_holdout_actionability.yaml",
+      "sha256": "713c3792fe85fdf554aefdd0e0ae0f688ffda1d4c39cf5a34ecd1055ceba6c17",
+      "bytes": 466,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/final_holdout_actionability.yaml",
+      "original_source_sha256": "713c3792fe85fdf554aefdd0e0ae0f688ffda1d4c39cf5a34ecd1055ceba6c17"
+    },
+    {
+      "file": "configs/final_holdout_effect_field.yaml",
+      "sha256": "92497835bd1cc05d0465129ff8332ef9815e5fc2a25661974c182e21b08faf0e",
+      "bytes": 526,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/final_holdout_effect_field.yaml",
+      "original_source_sha256": "92497835bd1cc05d0465129ff8332ef9815e5fc2a25661974c182e21b08faf0e"
+    },
+    {
+      "file": "configs/final_holdout_raw.yaml",
+      "sha256": "65714e0886886b40fbfb5b0ffda53ee7cf18bac554992bd53f0935b4faed6fc1",
+      "bytes": 1195,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/final_holdout_raw.yaml",
+      "original_source_sha256": "65714e0886886b40fbfb5b0ffda53ee7cf18bac554992bd53f0935b4faed6fc1"
+    },
+    {
+      "file": "configs/roman_empire_gcn.yaml",
+      "sha256": "da8202e771260ea3e5540d21d53000d394fdc2963a85431ca1481afaf149e9ca",
+      "bytes": 906,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/roman_empire_gcn.yaml",
+      "original_source_sha256": "da8202e771260ea3e5540d21d53000d394fdc2963a85431ca1481afaf149e9ca"
+    },
+    {
+      "file": "configs/roman_empire_mlp.yaml",
+      "sha256": "de0de54c6438ff2a196c2e7caf82b80426574bcb98a7da488d5af6cd2291b83d",
+      "bytes": 780,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/roman_empire_mlp.yaml",
+      "original_source_sha256": "de0de54c6438ff2a196c2e7caf82b80426574bcb98a7da488d5af6cd2291b83d"
+    },
+    {
+      "file": "configs/roman_empire_residual_gcn.yaml",
+      "sha256": "5a937d87de1e46120d0230e9834bd57a9dc301270e7d7dab2021492616b17219",
+      "bytes": 841,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/roman_empire_residual_gcn.yaml",
+      "original_source_sha256": "5a937d87de1e46120d0230e9834bd57a9dc301270e7d7dab2021492616b17219"
+    },
+    {
+      "file": "configs/topology_gate1_raw_cache.yaml",
+      "sha256": "6d37d82e96c4f8143748110d404f010fc1b739bbf1c6d63e7bb33a814df27073",
+      "bytes": 1073,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/topology_gate1_raw_cache.yaml",
+      "original_source_sha256": "6d37d82e96c4f8143748110d404f010fc1b739bbf1c6d63e7bb33a814df27073"
+    },
+    {
+      "file": "configs/topology_gate1_refined.yaml",
+      "sha256": "683e8d58b682638983a091bc857df6afea734489c77a4c21f9d2758dc3229c72",
+      "bytes": 597,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/configs/topology_gate1_refined.yaml",
+      "original_source_sha256": "683e8d58b682638983a091bc857df6afea734489c77a4c21f9d2758dc3229c72"
+    },
+    {
+      "file": "docs/effect_field_actionability_protocol.md",
+      "sha256": "829535c7ba89111119c5d09df67b2c213ba42fec452c85bb87baf6b926adfea3",
+      "bytes": 2585,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/effect_field_actionability_protocol.md",
+      "original_source_sha256": "829535c7ba89111119c5d09df67b2c213ba42fec452c85bb87baf6b926adfea3"
+    },
+    {
+      "file": "docs/effect_field_expansion_decision.md",
+      "sha256": "73e08376838edf357c234a687aceffd2d59ad79d6c6e3c86866bd654f13d72ad",
+      "bytes": 2881,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/effect_field_expansion_decision.md",
+      "original_source_sha256": "73e08376838edf357c234a687aceffd2d59ad79d6c6e3c86866bd654f13d72ad"
+    },
+    {
+      "file": "docs/effect_field_expansion_protocol.md",
+      "sha256": "ef9707f9ee488f7bb69b2e8cf409de028ccf92e18aea6d6ea8c3cee041d54cc0",
+      "bytes": 3913,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/effect_field_expansion_protocol.md",
+      "original_source_sha256": "ef9707f9ee488f7bb69b2e8cf409de028ccf92e18aea6d6ea8c3cee041d54cc0"
+    },
+    {
+      "file": "docs/effect_field_pivot_protocol.md",
+      "sha256": "23d54466cb10914de958515184e9c75ccba99e058e7a2f17fb2e2f0743c9db86",
+      "bytes": 5133,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/effect_field_pivot_protocol.md",
+      "original_source_sha256": "23d54466cb10914de958515184e9c75ccba99e058e7a2f17fb2e2f0743c9db86"
+    },
+    {
+      "file": "docs/effect_field_repair_interaction_decision.md",
+      "sha256": "4fba43a05dbba3ec90b9a074504573156042f6025e4de779639a94000035096e",
+      "bytes": 4255,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/effect_field_repair_interaction_decision.md",
+      "original_source_sha256": "4fba43a05dbba3ec90b9a074504573156042f6025e4de779639a94000035096e"
+    },
+    {
+      "file": "docs/effect_field_repair_interaction_protocol_v2.md",
+      "sha256": "a68109de5065cd2292d74c824ff6ad89ed8a39d86e758d063ffde787f8f78fd1",
+      "bytes": 2956,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/effect_field_repair_interaction_protocol_v2.md",
+      "original_source_sha256": "a68109de5065cd2292d74c824ff6ad89ed8a39d86e758d063ffde787f8f78fd1"
+    },
+    {
+      "file": "docs/final_interpretation_holdout_decision.md",
+      "sha256": "0ee0f5375f394418f920ab04e73c11aa8e3b2dfe55814accc43b4591a1d8a3ec",
+      "bytes": 5100,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/final_interpretation_holdout_decision.md",
+      "original_source_sha256": "0ee0f5375f394418f920ab04e73c11aa8e3b2dfe55814accc43b4591a1d8a3ec"
+    },
+    {
+      "file": "docs/final_interpretation_holdout_protocol.md",
+      "sha256": "0ca267b72b7e40c075b11139c7ea7e1f0d7e915136fa10d4237356ef0bbfc1d0",
+      "bytes": 4432,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/final_interpretation_holdout_protocol.md",
+      "original_source_sha256": "0ca267b72b7e40c075b11139c7ea7e1f0d7e915136fa10d4237356ef0bbfc1d0"
+    },
+    {
+      "file": "docs/topology_gate1_decision.md",
+      "sha256": "c4cb63ed476eb3174a18223ac5decfa294937fafd34a4903e49f706b58b12541",
+      "bytes": 3848,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/topology_gate1_decision.md",
+      "original_source_sha256": "c4cb63ed476eb3174a18223ac5decfa294937fafd34a4903e49f706b58b12541"
+    },
+    {
+      "file": "docs/topology_gate1_protocol.md",
+      "sha256": "2b2e9247814db6328b529d3b00d39ef99cbeafb9d69eae8e11780f19702b1b78",
+      "bytes": 6789,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/topology_gate1_protocol.md",
+      "original_source_sha256": "2b2e9247814db6328b529d3b00d39ef99cbeafb9d69eae8e11780f19702b1b78"
+    },
+    {
+      "file": "notes/later-controls/direction_amplification_decision.md",
+      "sha256": "bbb698eeb5a4ea016b9013afd83550ec83244b4c06cab8fdcffffbba142ff22b",
+      "bytes": 7590,
+      "source_identity": "source://footprint-study/expansion/docs/direction_amplification_decision.md",
+      "original_source_sha256": "bbb698eeb5a4ea016b9013afd83550ec83244b4c06cab8fdcffffbba142ff22b"
+    },
+    {
+      "file": "notes/later-controls/matched_null_decision.md",
+      "sha256": "bebf4794f593823f153285dfb4190def6ab822edabae37b62c2770c0aea638e1",
+      "bytes": 6746,
+      "source_identity": "source://footprint-study/expansion/docs/matched_null_decision.md",
+      "original_source_sha256": "bebf4794f593823f153285dfb4190def6ab822edabae37b62c2770c0aea638e1"
+    },
+    {
+      "file": "paper/make_figures.py",
+      "sha256": "0092553d10f723934bd70293050b4056df5354cab20bae3499e9ea9ffca15ad5",
+      "bytes": 9626,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/paper/make_figures.py",
+      "original_source_sha256": "0092553d10f723934bd70293050b4056df5354cab20bae3499e9ea9ffca15ad5"
+    },
+    {
+      "file": "pyproject.toml",
+      "sha256": "d3fee3cfeb36beaab0f391ac8a79bcccbdab83ac8a6eba85b8b80e549e631f9a",
+      "bytes": 1096,
+      "packaging_source_identities": [
+        {
+          "path": "source://footprint-study/paper_a_release/code/gnn-effect-fields/pyproject.toml",
+          "sha256": "e1a1d54de1155e74760a1a64d97045f1b81d4972373d18ff8626584c9b18ac3e"
+        }
+      ]
+    },
+    {
+      "file": "reproduce.py",
+      "sha256": "93459bdf3666828e0863ccad5e41772df2d9d00b7bc4e7528d58568fcbb619e6",
+      "bytes": 3850
+    },
+    {
+      "file": "requirements-figures.txt",
+      "sha256": "927970c493dcb95b429de5558f9686a6e0ee52c18116e5e3295f15a5b58adabc",
+      "bytes": 32
+    },
+    {
+      "file": "src/gnn_repair/__init__.py",
+      "sha256": "cde9ac1f47897081b1494b94e720996deeb7aabb60ff00fefd198bf5a8f3ac19",
+      "bytes": 83,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/__init__.py",
+      "original_source_sha256": "cde9ac1f47897081b1494b94e720996deeb7aabb60ff00fefd198bf5a8f3ac19"
+    },
+    {
+      "file": "src/gnn_repair/checkpoints.py",
+      "sha256": "8a4b68c3263145a57e53b7ffe3fda8e5a8c33169feb473f63575f6ba7ed2dbfa",
+      "bytes": 5431,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/checkpoints.py",
+      "original_source_sha256": "8a4b68c3263145a57e53b7ffe3fda8e5a8c33169feb473f63575f6ba7ed2dbfa"
+    },
+    {
+      "file": "src/gnn_repair/data.py",
+      "sha256": "b68d97c330d79da586987425aeab62b39d10b04c9b78091a92cf7374b911c0c6",
+      "bytes": 15945,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/data.py",
+      "original_source_sha256": "b68d97c330d79da586987425aeab62b39d10b04c9b78091a92cf7374b911c0c6"
+    },
+    {
+      "file": "src/gnn_repair/effect_field_actionability.py",
+      "sha256": "71fd05c9adde9c7ca6bd70f96b7cbdfcdd983f4dbadc35ec52e5877014e2dae7",
+      "bytes": 27998,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/effect_field_actionability.py",
+      "original_source_sha256": "71fd05c9adde9c7ca6bd70f96b7cbdfcdd983f4dbadc35ec52e5877014e2dae7"
+    },
+    {
+      "file": "src/gnn_repair/effect_field_actionability_replication.py",
+      "sha256": "d05798e5ac8e3eb477dcc2cb96c277fab50e8e1a1a70dc983cdf6e25915453a7",
+      "bytes": 9413,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/effect_field_actionability_replication.py",
+      "original_source_sha256": "d05798e5ac8e3eb477dcc2cb96c277fab50e8e1a1a70dc983cdf6e25915453a7"
+    },
+    {
+      "file": "src/gnn_repair/effect_field_expansion.py",
+      "sha256": "f1b5035d2997d91fdf4516904908383c4ce955fc88276492fcbf3b722496a8d3",
+      "bytes": 16355,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/effect_field_expansion.py",
+      "original_source_sha256": "f1b5035d2997d91fdf4516904908383c4ce955fc88276492fcbf3b722496a8d3"
+    },
+    {
+      "file": "src/gnn_repair/effect_field_gate.py",
+      "sha256": "5f2d47fbf930615f4de88f67c3fe39893c22f7b9911e6fe5ae4d638e816419e8",
+      "bytes": 21616,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/effect_field_gate.py",
+      "original_source_sha256": "5f2d47fbf930615f4de88f67c3fe39893c22f7b9911e6fe5ae4d638e816419e8"
+    },
+    {
+      "file": "src/gnn_repair/effect_field_repair_interactions.py",
+      "sha256": "13540ef317161b9d584f01d5de8d7660c19f2212bbe1ccf4117531d0e5964af6",
+      "bytes": 28785,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/effect_field_repair_interactions.py",
+      "original_source_sha256": "13540ef317161b9d584f01d5de8d7660c19f2212bbe1ccf4117531d0e5964af6"
+    },
+    {
+      "file": "src/gnn_repair/final_holdout_actionability.py",
+      "sha256": "8fbf98f69073a565645b9b7fa1b202e639ce292c8d3db96d229120536702ba73",
+      "bytes": 8962,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/final_holdout_actionability.py",
+      "original_source_sha256": "8fbf98f69073a565645b9b7fa1b202e639ce292c8d3db96d229120536702ba73"
+    },
+    {
+      "file": "src/gnn_repair/final_holdout_effect_field.py",
+      "sha256": "5afe6ec558df8e0c463f1b4485ffacfdfe121f45592c2e073ae917aee3f88cfd",
+      "bytes": 14984,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/final_holdout_effect_field.py",
+      "original_source_sha256": "5afe6ec558df8e0c463f1b4485ffacfdfe121f45592c2e073ae917aee3f88cfd"
+    },
+    {
+      "file": "src/gnn_repair/final_holdout_raw.py",
+      "sha256": "821ab7519c0f50b55551914bfef94fa9288835c5a8c4c4d05b095113cf10676f",
+      "bytes": 7634,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/final_holdout_raw.py",
+      "original_source_sha256": "821ab7519c0f50b55551914bfef94fa9288835c5a8c4c4d05b095113cf10676f"
+    },
+    {
+      "file": "src/gnn_repair/gate1_decision.py",
+      "sha256": "0e827bf9ea7c4b02f442d8f2285d0267ca0015b7afab7e8c6b4ddd999b04b026",
+      "bytes": 39931,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/gate1_decision.py",
+      "original_source_sha256": "0e827bf9ea7c4b02f442d8f2285d0267ca0015b7afab7e8c6b4ddd999b04b026"
+    },
+    {
+      "file": "src/gnn_repair/gate1_features.py",
+      "sha256": "05b0971d84ce8904456e0f9edf46d5ba65027a93ebd397500bf043f4de139461",
+      "bytes": 32716,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/gate1_features.py",
+      "original_source_sha256": "05b0971d84ce8904456e0f9edf46d5ba65027a93ebd397500bf043f4de139461"
+    },
+    {
+      "file": "src/gnn_repair/gate1_nulls.py",
+      "sha256": "900efdf1f8d2c1d82263fda4fc90ff5d9792c1e4a12357a587657be05fada8ab",
+      "bytes": 12286,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/gate1_nulls.py",
+      "original_source_sha256": "900efdf1f8d2c1d82263fda4fc90ff5d9792c1e4a12357a587657be05fada8ab"
+    },
+    {
+      "file": "src/gnn_repair/gate1_prediction.py",
+      "sha256": "a09c3ec78bcf47aaafc14d03b0aa8577093770af084b3b57693a6b79d03bca49",
+      "bytes": 20641,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/gate1_prediction.py",
+      "original_source_sha256": "a09c3ec78bcf47aaafc14d03b0aa8577093770af084b3b57693a6b79d03bca49"
+    },
+    {
+      "file": "src/gnn_repair/gate2_interactions.py",
+      "sha256": "ca77b814c0d32c03461febec8453695fd79e8b4a96a483c4e671d468e847f298",
+      "bytes": 38943,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/gate2_interactions.py",
+      "original_source_sha256": "ca77b814c0d32c03461febec8453695fd79e8b4a96a483c4e671d468e847f298"
+    },
+    {
+      "file": "src/gnn_repair/interventions.py",
+      "sha256": "cd110434ac5b7034735d3a8c35ac0fbf83dbf13362a9f37dad242c3d7378d4e5",
+      "bytes": 26906,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/interventions.py",
+      "original_source_sha256": "cd110434ac5b7034735d3a8c35ac0fbf83dbf13362a9f37dad242c3d7378d4e5"
+    },
+    {
+      "file": "src/gnn_repair/localization.py",
+      "sha256": "a580f486872f0fa44a260b1f91ca1897f232de13c3085acf3df1a9bbcdedf7d5",
+      "bytes": 26240,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/localization.py",
+      "original_source_sha256": "a580f486872f0fa44a260b1f91ca1897f232de13c3085acf3df1a9bbcdedf7d5"
+    },
+    {
+      "file": "src/gnn_repair/metrics.py",
+      "sha256": "0bbd764cfcc4324ebf63463f5372ab481d3e2dfb628e511a097291ffb21937a9",
+      "bytes": 1960,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/metrics.py",
+      "original_source_sha256": "0bbd764cfcc4324ebf63463f5372ab481d3e2dfb628e511a097291ffb21937a9"
+    },
+    {
+      "file": "src/gnn_repair/model.py",
+      "sha256": "0ef672182794d7a868fb2eb88f9a614007e6ff6c28035fca5ddf5729d4ca6211",
+      "bytes": 8859,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/model.py",
+      "original_source_sha256": "0ef672182794d7a868fb2eb88f9a614007e6ff6c28035fca5ddf5729d4ca6211"
+    },
+    {
+      "file": "src/gnn_repair/protocol.py",
+      "sha256": "d4e4090368d86cdaf8546133c426aa6b4904446194faa43e961512ef1f875cf2",
+      "bytes": 4766,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/protocol.py",
+      "original_source_sha256": "d4e4090368d86cdaf8546133c426aa6b4904446194faa43e961512ef1f875cf2"
+    },
+    {
+      "file": "src/gnn_repair/repair.py",
+      "sha256": "e69d4194032530ae1d2cc1fb9fde6a6f2860215cafefece61a9e11a3232b6c00",
+      "bytes": 69153,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/repair.py",
+      "original_source_sha256": "e69d4194032530ae1d2cc1fb9fde6a6f2860215cafefece61a9e11a3232b6c00"
+    },
+    {
+      "file": "src/gnn_repair/reproducibility.py",
+      "sha256": "9863d37469c5a8827740fbe9b754a084c7ff414b9a38be6e37723f78449803db",
+      "bytes": 1587,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/reproducibility.py",
+      "original_source_sha256": "9863d37469c5a8827740fbe9b754a084c7ff414b9a38be6e37723f78449803db"
+    },
+    {
+      "file": "src/gnn_repair/structural.py",
+      "sha256": "a68708c4f4e5dc6cfac695f3e5bb3a8d47f0d692f6355c2bd56d786ced020858",
+      "bytes": 55334,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/structural.py",
+      "original_source_sha256": "a68708c4f4e5dc6cfac695f3e5bb3a8d47f0d692f6355c2bd56d786ced020858"
+    },
+    {
+      "file": "src/gnn_repair/structural_representations.py",
+      "sha256": "2ec08607cd5d7ad7c50ae1053fbcd73089052227dec849e1d2b400f6639ae5ed",
+      "bytes": 30583,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/structural_representations.py",
+      "original_source_sha256": "2ec08607cd5d7ad7c50ae1053fbcd73089052227dec849e1d2b400f6639ae5ed"
+    },
+    {
+      "file": "src/gnn_repair/topology_gate1.py",
+      "sha256": "9517ac9145addecd4151a60491edfd46393c63d252badc34a53b7361ba8ab259",
+      "bytes": 68119,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/topology_gate1.py",
+      "original_source_sha256": "9517ac9145addecd4151a60491edfd46393c63d252badc34a53b7361ba8ab259"
+    },
+    {
+      "file": "src/gnn_repair/topology_gate1_refined.py",
+      "sha256": "a53ce3e3e0d8dbfb9423f70e13629203764d394b4ea1318b512e3f866252af97",
+      "bytes": 36522,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/topology_gate1_refined.py",
+      "original_source_sha256": "a53ce3e3e0d8dbfb9423f70e13629203764d394b4ea1318b512e3f866252af97"
+    },
+    {
+      "file": "src/gnn_repair/train.py",
+      "sha256": "a6f83200b4c7d3a525661715dc3768d7765b88c6add3dbbf795db11b2b795a63",
+      "bytes": 12475,
+      "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/src/gnn_repair/train.py",
+      "original_source_sha256": "a6f83200b4c7d3a525661715dc3768d7765b88c6add3dbbf795db11b2b795a63"
+    },
+    {
+      "file": "verify.py",
+      "sha256": "aa23a618d7d80d1036c13aabdd82344a117ffdd9cfd30441c0ac6695042141d2",
+      "bytes": 783
+    }
+  ]
+}

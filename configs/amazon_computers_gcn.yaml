@@ -1,0 +1,37 @@
+experiment:
+  name: amazon_computers_gcn
+  seeds: [1, 7, 42, 123, 2026]
+
+data:
+  name: amazon_computers
+  loader: sparse_csr_npz
+  root: data/raw
+  filename: amazon_computers.npz
+  url: https://github.com/shchur/gnn-benchmark/raw/master/data/npz/amazon_electronics_computers.npz
+  normalize_features: true
+  verify_expected_stats: true
+  expected_stats:
+    num_nodes: 13752
+    num_directed_edges: 491722
+    num_features: 767
+    num_classes: 10
+  split_mode: stratified_random
+  train_fraction: 0.70
+  val_fraction: 0.15
+  test_fraction: 0.15
+
+model:
+  hidden_channels: [32, 32]
+  dropout: 0.5
+
+training:
+  device: cpu
+  learning_rate: 0.01
+  weight_decay: 0.0005
+  max_epochs: 500
+  patience: 100
+  min_delta: 0.0001
+  num_threads: 1
+
+output:
+  root: artifacts/amazon_computers

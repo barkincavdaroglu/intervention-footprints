@@ -1,0 +1,14 @@
+output: artifacts/final_holdout/effect_field.json
+raw_report: artifacts/final_holdout/raw_effects.json
+cache_root: artifacts/final_holdout/effect_field_runs
+protocol_document: docs/final_interpretation_holdout_protocol.md
+fresh_holdout: true
+effect_field:
+  quantiles: [0.90, 0.95, 0.99]
+  minimum_impact: 0.000000000001
+  active_threshold: 0.000000000001
+  node_projection_dimension: 256
+  permutations: 1000
+  ridge_alpha: 1.0
+  primary_candidate: mask_field
+  candidate_names: [raw_field, mask_field, continuous_plus_mask]

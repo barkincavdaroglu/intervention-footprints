@@ -1,0 +1,17 @@
+output: artifacts/effect_field_actionability_replication.json
+raw_report: artifacts/effect_field_expansion_raw.json
+validity_report: artifacts/effect_field_expansion.json
+cache_root: artifacts/effect_field_actionability_replication_runs
+protocol_document: docs/effect_field_expansion_protocol.md
+development_only: true
+
+actionability:
+  active_threshold: 0.000000000001
+  low_similarity_quantile: 0.25
+  high_similarity_quantile: 0.75
+  pair_candidate_cap: 64
+  matched_set_count: 2
+
+replication_cells:
+  - citationfull_citeseer/thesis_gcn
+  - citationfull_citeseer/residual_gcn

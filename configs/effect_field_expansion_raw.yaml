@@ -1,0 +1,57 @@
+output: artifacts/effect_field_expansion_raw.json
+cache_root: artifacts/topology_gate1_raw_runs
+development_only: true
+
+# Use exactly the same collection settings as the original frozen raw cache so its
+# 30 GNN sidecars can be reused byte-for-byte. Only missing cells are computed.
+gate1:
+  num_threads: 1
+  impact_scope: train_validation
+  impact_quantiles: [0.90, 0.95, 0.99]
+  minimum_impact: 0.000000000001
+  active_minimum_mass: 0.000000000001
+  wl_depth: 4
+  diffusion_times: [0.01, 0.1, 1.0, 10.0]
+  neuron_permutations: 0
+  graph_rewires: 0
+  rewiring_views: []
+  swaps_per_edge: 0.0
+  max_swap_attempt_multiplier: 20
+  bootstrap_repetitions: 0
+  bootstrap_seed: 20270803
+  ridge_alpha: 1.0
+
+datasets:
+  citationfull_citeseer:
+    backbones:
+      thesis_gcn:
+        root: artifacts/citationfull_citeseer
+        layer: 0
+      residual_gcn:
+        root: artifacts/citationfull_citeseer/residual_gcn
+        layer: 0
+      matched_mlp:
+        root: artifacts/citationfull_citeseer/mlp
+        layer: 0
+  amazon_computers:
+    backbones:
+      thesis_gcn:
+        root: artifacts/amazon_computers
+        layer: 0
+      residual_gcn:
+        root: artifacts/amazon_computers/residual_gcn
+        layer: 0
+      matched_mlp:
+        root: artifacts/amazon_computers/mlp
+        layer: 0
+  roman_empire:
+    backbones:
+      thesis_gcn:
+        root: artifacts/roman_empire
+        layer: 0
+      residual_gcn:
+        root: artifacts/roman_empire/residual_gcn
+        layer: 4
+      matched_mlp:
+        root: artifacts/roman_empire/mlp
+        layer: 0

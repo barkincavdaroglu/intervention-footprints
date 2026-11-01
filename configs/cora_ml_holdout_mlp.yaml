@@ -1,0 +1,23 @@
+study: {id: final_interpretation_holdout_v1, phase: exploratory}
+evaluation_splits: [validation]
+experiment:
+  name: cora_ml_holdout_mlp
+  seeds: [17, 29, 43, 71, 101]
+data:
+  name: cora_ml
+  loader: sparse_csr_npz
+  root: data/raw
+  filename: cora_ml.npz
+  url: https://raw.githubusercontent.com/abojchevski/graph2gauss/240248289d38c22ba28ea8e56b7d6873e291499b/data/cora_ml.npz
+  normalize_features: true
+  num_classes: 7
+  test_label_access: withheld
+  verify_expected_stats: true
+  expected_stats: {num_nodes: 2995, num_raw_directed_edges: 8416, num_directed_edges: 16316, num_features: 2879, num_classes: 7}
+  split_mode: stratified_random
+  train_fraction: 0.70
+  val_fraction: 0.15
+  test_fraction: 0.15
+model: {type: mlp, hidden_channels: [32, 32], dropout: 0.5}
+training: {device: cpu, optimizer: adam, learning_rate: 0.01, weight_decay: 0.0005, max_epochs: 500, patience: 100, min_delta: 0.0001, num_threads: 1}
+output: {root: artifacts/final_holdout/cora_ml/matched_mlp}

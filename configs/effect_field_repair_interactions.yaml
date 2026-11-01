@@ -1,0 +1,24 @@
+output: artifacts/effect_field_repair_interactions_v2.json
+raw_report: artifacts/topology_gate1_raw_cache.json
+actionability_report: artifacts/effect_field_actionability.json
+cache_root: artifacts/effect_field_repair_interaction_v2_runs
+protocol_document: docs/effect_field_repair_interaction_protocol_v2.md
+development_only: true
+
+repair_interactions:
+  active_threshold: 0.000000000001
+  pool_size: 12
+  low_similarity_quantile: 0.25
+  high_similarity_quantile: 0.75
+  pair_candidate_cap: 64
+  matched_set_count: 2
+  training:
+    num_threads: 1
+    learning_rate: 0.01
+    max_epochs: 30
+    patience: 10
+    min_utility_delta: 0.000001
+    target_ce_weight: 1.0
+    non_target_kl_weight: 1.0
+    collateral_ce_weight: 1.0
+    identity_l2_weight: 0.001

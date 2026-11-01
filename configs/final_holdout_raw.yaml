@@ -1,0 +1,31 @@
+output: artifacts/final_holdout/raw_effects.json
+cache_root: artifacts/final_holdout/raw_effect_runs
+protocol_document: docs/final_interpretation_holdout_protocol.md
+fresh_holdout: true
+gate1:
+  num_threads: 1
+  impact_scope: train_validation
+  impact_quantiles: [0.90, 0.95, 0.99]
+  minimum_impact: 0.000000000001
+  active_minimum_mass: 0.000000000001
+  wl_depth: 4
+  diffusion_times: [0.01, 0.1, 1.0, 10.0]
+  neuron_permutations: 0
+  graph_rewires: 0
+  rewiring_views: []
+  swaps_per_edge: 0.0
+  max_swap_attempt_multiplier: 20
+  bootstrap_repetitions: 0
+  bootstrap_seed: 20270804
+  ridge_alpha: 1.0
+datasets:
+  cora_ml:
+    backbones:
+      thesis_gcn: {root: artifacts/final_holdout/cora_ml/thesis_gcn, layer: 0}
+      residual_gcn: {root: artifacts/final_holdout/cora_ml/residual_gcn, layer: 0}
+      matched_mlp: {root: artifacts/final_holdout/cora_ml/matched_mlp, layer: 0}
+  chameleon_filtered:
+    backbones:
+      thesis_gcn: {root: artifacts/final_holdout/chameleon_filtered/thesis_gcn, layer: 0}
+      residual_gcn: {root: artifacts/final_holdout/chameleon_filtered/residual_gcn, layer: 0}
+      matched_mlp: {root: artifacts/final_holdout/chameleon_filtered/matched_mlp, layer: 0}

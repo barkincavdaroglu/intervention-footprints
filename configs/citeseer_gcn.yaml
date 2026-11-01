@@ -1,0 +1,37 @@
+experiment:
+  name: citationfull_citeseer_gcn
+  seeds: [1, 7, 42, 123, 2026]
+
+data:
+  name: citationfull_citeseer
+  loader: sparse_csr_npz
+  root: data/raw
+  filename: citeseer.npz
+  url: https://github.com/abojchevski/graph2gauss/raw/refs/heads/master/data/citeseer.npz
+  normalize_features: true
+  verify_expected_stats: true
+  expected_stats:
+    num_nodes: 4230
+    num_directed_edges: 10674
+    num_features: 602
+    num_classes: 6
+  split_mode: stratified_random
+  train_fraction: 0.70
+  val_fraction: 0.15
+  test_fraction: 0.15
+
+model:
+  hidden_channels: [32, 32]
+  dropout: 0.5
+
+training:
+  device: cpu
+  learning_rate: 0.01
+  weight_decay: 0.0005
+  max_epochs: 500
+  patience: 100
+  min_delta: 0.0001
+  num_threads: 1
+
+output:
+  root: artifacts/citationfull_citeseer

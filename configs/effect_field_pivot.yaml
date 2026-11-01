@@ -1,0 +1,15 @@
+output: artifacts/effect_field_gate.json
+raw_report: artifacts/topology_gate1_raw_cache.json
+cache_root: artifacts/effect_field_gate_runs
+protocol_document: docs/effect_field_pivot_protocol.md
+development_only: true
+
+effect_field:
+  quantiles: [0.90, 0.95, 0.99]
+  minimum_impact: 0.000000000001
+  active_threshold: 0.000000000001
+  node_projection_dimension: 256
+  permutations: 1000
+  ridge_alpha: 1.0
+  primary_candidate: mask_field
+  candidate_names: [raw_field, mask_field, continuous_plus_mask]

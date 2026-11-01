@@ -1,0 +1,62 @@
+# Can a component’s intervention footprint reveal its function?
+
+Code, frozen checkpoint-level results, and protocols for classwise effect alignment, joint ablation, and learned repair in small graph neural networks.
+
+## Reproduce the reported summaries
+
+Python 3.11 or newer is sufficient for the integrity check and numerical summary. No extra packages, model checkpoints, or dataset downloads are needed for these two commands:
+
+```sh
+python3 verify.py
+python3 reproduce.py --output /tmp/intervention-footprints-summary.json
+```
+
+The summary reaggregates checkpoint-level records, including group medians and matched GNN-minus-MLP contrasts. The principal results are:
+
+| Comparison | Median | Direction across checkpoints |
+| --- | --- | --- |
+| Prospective footprint alignment improvement | +0.169507 | 29/30 positive |
+| Prospective joint-ablation contrast | +0.000348306 KL units | 27/30 positive |
+| Development repair-interaction contrast | −0.002713676 utility units | 22/30 negative |
+
+These comparisons have different outcomes and evaluation sets. The repair result is from development checkpoints, not the prospective holdout. Read the frozen protocols in `docs/` for their definitions, matching rules, and decision criteria.
+
+## Regenerate the figures
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements-figures.txt
+python paper/make_figures.py
+```
+
+This regenerates the manuscript’s hypothesis diagram and final-holdout effect/alignment and joint-ablation figures from the included JSON reports. PDF and PNG files and a report-hash manifest are written to `paper/figures/`. Generated copies are not tracked.
+
+## Experiment code and inputs
+
+- `src/gnn_repair/`: training, interventions, effect-field analysis, and dependency modules.
+- `configs/`: frozen dataset, model, and experiment configurations.
+- `docs/`: scientific protocols, decisions, and limits on the claims, including unsuccessful repair and topology comparisons.
+- `artifacts/`: numerical reports used for the main-study summaries.
+- `notes/later-controls/`: later matched-direction and amplification decision memos. The extension experiments’ raw data and execution code are outside this package.
+- `paper/make_figures.py`: the figure generator.
+- `SOURCE_MANIFEST.json` and `verify.py`: current file hashes and source provenance.
+
+Install the experimental package with `python -m pip install -e .`. Its command-line entrypoints and dependencies are declared in `pyproject.toml`. Model weights, datasets, and raw effect caches are not bundled. The recorded main-study CPU environment used Python 3.11.7, NumPy 2.3.3, SciPy 1.17.1, scikit-learn 1.8.0, and PyTorch 2.7.1 with one thread.
+
+For the prospective datasets, immutable input identities are:
+
+| Dataset | Source revision | Archive SHA-256 |
+| --- | --- | --- |
+| Cora-ML | `graph2gauss` commit `240248289d38c22ba28ea8e56b7d6873e291499b` | `bff04cbfaf903581de18b28dd112b92b2e12c05dfcb1cfc5f6875a5a280d9872` |
+| Chameleon-filtered | `heterophilous-graphs` commit `a431395582e929d88271309716bea4fe24ce6318` | `bf46f07e1fb5249280447e5fe3100f3e82fc4b93ad1e13ffcfdec924b6ac0bb5` |
+
+Exact URLs, splits, training settings, and stopping rules are in `docs/final_interpretation_holdout_protocol.md` and the corresponding configs. These experiments use validation labels and keep test labels blinded.
+
+The selected intervention layer is cell-specific: the narrow GCN uses its first hidden activation. Residual GCNs use the first block except Roman Empire, which uses block 4, the last of five. This asymmetry affects the development repair comparison.
+
+## Scope and provenance
+
+The quick-start commands reproduce summaries and figures from saved results. They do not retrain models or replay the later extension studies. Fresh runs require dataset/model inputs and the frozen experimental setup. Some historical paths and hashes in saved records refer to the original archive, so byte-for-byte comparison with newly generated reports is not an advertised replay check.
+
+Personal paths in distributed reports were sanitized without changing numerical outcomes. Embedded historical hashes identify the original records; `SOURCE_MANIFEST.json` authenticates the current files. File integrity is distinct from scientific validation. Effect similarity, ablation nonadditivity, repair utility, and amplification of output changes are separate measurements.

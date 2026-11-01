@@ -1,0 +1,32 @@
+experiment:
+  name: roman_empire_mlp
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+data:
+  name: roman_empire
+  loader: heterophilous_npz
+  root: data/raw
+  filename: roman_empire.npz
+  url: https://github.com/yandex-research/heterophilous-graphs/raw/main/data/roman_empire.npz
+  normalize_features: false
+  verify_expected_stats: true
+  expected_stats: {num_nodes: 22662, num_raw_directed_edges: 32927, num_directed_edges: 65854, num_features: 300, num_classes: 18, num_predefined_splits: 10}
+  split_mode: predefined
+
+model:
+  type: mlp
+  hidden_channels: [32, 32]
+  dropout: 0.5
+
+training:
+  device: cpu
+  optimizer: adam
+  learning_rate: 0.01
+  weight_decay: 0.0005
+  max_epochs: 500
+  patience: 100
+  min_delta: 0.0001
+  num_threads: 1
+
+output:
+  root: artifacts/roman_empire/mlp

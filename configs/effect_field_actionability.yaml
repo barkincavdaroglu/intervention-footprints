@@ -1,0 +1,13 @@
+output: artifacts/effect_field_actionability.json
+raw_report: artifacts/topology_gate1_raw_cache.json
+validity_report: artifacts/effect_field_gate.json
+cache_root: artifacts/effect_field_actionability_runs
+protocol_document: docs/effect_field_actionability_protocol.md
+development_only: true
+
+actionability:
+  active_threshold: 0.000000000001
+  low_similarity_quantile: 0.25
+  high_similarity_quantile: 0.75
+  pair_candidate_cap: 64
+  matched_set_count: 2

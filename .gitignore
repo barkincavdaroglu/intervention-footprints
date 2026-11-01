@@ -1,0 +1,31 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+data/
+work/
+outputs/
+artifacts/**/checkpoints/
+artifacts/**/cache/
+
+# Local secrets are never part of the research export.
+.env
+.env.*
+!.env.example
+.netrc
+.aws/
+*.pem
+*.p12
+*.pfx
+*.key
+credentials.json
+application_default_credentials.json
+
+# Keep local agent/workflow files out of the public research package.
+AGENTS.md
+STATE_LEDGER.md
+COPY_VALIDATION.json
+CLEANUP_REPORT.json
+paper/figures/

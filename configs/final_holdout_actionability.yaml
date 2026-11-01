@@ -1,0 +1,12 @@
+output: artifacts/final_holdout/actionability.json
+raw_report: artifacts/final_holdout/raw_effects.json
+validity_report: artifacts/final_holdout/effect_field.json
+cache_root: artifacts/final_holdout/actionability_runs
+protocol_document: docs/final_interpretation_holdout_protocol.md
+fresh_holdout: true
+actionability:
+  active_threshold: 0.000000000001
+  low_similarity_quantile: 0.25
+  high_similarity_quantile: 0.75
+  pair_candidate_cap: 64
+  matched_set_count: 2
