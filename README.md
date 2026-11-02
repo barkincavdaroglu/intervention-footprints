@@ -32,6 +32,8 @@ python paper/make_figures.py
 
 This regenerates the manuscript’s hypothesis diagram and final-holdout effect/alignment and joint-ablation figures from the included JSON reports. PDF and PNG files and a report-hash manifest are written to `paper/figures/`. Generated copies are not tracked.
 
+The [companion figure package](notes/later-controls/companion/) adds saved checkpoint measurements and a generator for five figures about basis controls, amplification, and cross-layer effects. Run `python notes/later-controls/companion/make_figures.py --output /tmp/ablation-resolution-figures` in the same environment. This reproduces the figures, not the extension experiments.
+
 ## Experiment code and inputs
 
 - `src/gnn_repair/`: training, interventions, effect-field analysis, and dependency modules.

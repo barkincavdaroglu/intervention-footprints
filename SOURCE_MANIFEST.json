@@ -16,8 +16,8 @@
     },
     {
       "file": "README.md",
-      "sha256": "907a5bf1e292c4bc21920b01cf390306199b42229cb4aaa0ae780298e7ff3e63",
-      "bytes": 5328
+      "sha256": "75c034cfa99091f112b87406a474c86e8ce761047e21753f70e40fc8a1963fe6",
+      "bytes": 5710
     },
     {
       "file": "artifacts/effect_field_actionability.json",
@@ -347,11 +347,29 @@
       "transformation": "Public summary compiled 2026-11-01 from saved W1.a results and protocol; no original decision memo existed."
     },
     {
+      "file": "notes/later-controls/companion/README.md",
+      "sha256": "38bc52033b178d43cc8c0694f0fabca72b4de0a3a5aedf3c43d9c3942313f56b",
+      "bytes": 3237
+    },
+    {
+      "file": "notes/later-controls/companion/figure-data.json",
+      "sha256": "18a0dcf0a309fae72635f3771a91a07f10a2eeb3b76fafb06fc94cfbbf7c0130",
+      "bytes": 224041,
+      "source_identity": "derived://frozen-extension-reports-and-edge-sidecars",
+      "provenance_note": "Archival source identities and hashes are embedded in sources and sidecar_sources. This is an extracted measurement subset, not a raw experiment report."
+    },
+    {
+      "file": "notes/later-controls/companion/make_figures.py",
+      "sha256": "5a5d69ede7151fb26cd34f1a595af486307b99985be1ef6fcd0ce0a3e5174243",
+      "bytes": 10451
+    },
+    {
       "file": "notes/later-controls/cross_layer_edges_decision.md",
-      "sha256": "31a7e6376ef69f30e4a3f166b847d757e4cfa7d8444b9d898716e5241450f029",
-      "bytes": 9034,
+      "sha256": "9506e005708037540df44d036d8fd591f2f348e7d2c3291a1453a456de54fedc",
+      "bytes": 9780,
       "source_identity": "source://footprint-study/expansion/docs/cross_layer_edges_decision.md",
-      "original_source_sha256": "33b36eefaaae4a64c4f2e70beb87e2687719f0af3f0feb3000393a8be5f159b8"
+      "original_source_sha256": "33b36eefaaae4a64c4f2e70beb87e2687719f0af3f0feb3000393a8be5f159b8",
+      "publication_note": "Original archival prose retained with a dated metric/interpretation clarification."
     },
     {
       "file": "notes/later-controls/cross_layer_seed_stability_decision.md",
@@ -369,10 +387,11 @@
     },
     {
       "file": "notes/later-controls/edge_tail_v2_decision.md",
-      "sha256": "95360fd8e07fbfe4d8a6749f3aa77c837c841b48089bf17bcbed77ab0157a185",
-      "bytes": 5960,
+      "sha256": "149f6a357553934f5c8bf6fb4ccabb98f2b4f19262cd83374652deb8328672ef",
+      "bytes": 6905,
       "source_identity": "source://footprint-study/expansion/docs/edge_tail_v2_decision.md",
-      "original_source_sha256": "a9e210dab9548e117d552a367241de898472c81b9552153996eb68ca2e59c875"
+      "original_source_sha256": "a9e210dab9548e117d552a367241de898472c81b9552153996eb68ca2e59c875",
+      "publication_note": "Original archival prose retained with a dated metric/interpretation clarification."
     },
     {
       "file": "notes/later-controls/feature_basis_decision.md",

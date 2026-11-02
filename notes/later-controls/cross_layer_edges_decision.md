@@ -1,5 +1,7 @@
 # Record: exact cross-layer edges and attribution fidelity (W2.a)
 
+> **Publication clarification — 2026-11-01.** The magnitude-Spearman cell range in E1 below should read **0.8614 to 0.9972**. The maximum cell median is Amazon Computers / narrow GCN, 0.9972380397. This was checked against the frozen `cross_layer_edges.json` checkpoint summaries and all 30 hashed edge-matrix sidecars. The signed-Spearman headline and experimental decisions are unchanged. The original archival text is retained below. The [companion data](companion/figure-data.json) contains the corrected checkpoint-level values and source hashes. Also read E3 as broad node-level influence, not literal uniformity, and E6 as the measured relative error of this simultaneous-ablation comparison, not a universal bound on circuit fidelity.
+
 Date recorded: 2026-08-04
 
 Status: **complete and evaluable; descriptive measurement study, no scientific

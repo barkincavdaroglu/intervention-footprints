@@ -1,5 +1,7 @@
 # Decision: the weak-edge tail is run-specific structure (W2.a E7 v2)
 
+> **Publication clarification — 2026-11-01.** E7b below is **Spearman agreement gain over shuffled attribution**, not raw Spearman agreement: the exact/first-order correlation minus the median correlation after shuffling attribution within the same stratum. The head/tail values +0.9807/+0.9792 are unchanged. The frozen protocol and implementation define this subtraction, and the [companion data](companion/figure-data.json) retains the checkpoint gains and source hash. A gain can exceed one. The historical paragraph describing these numbers as raw Spearman correlations is incorrect. Exact forward interventions and gradient approximation use the same trained model, so “share no machinery” is too strong. Their agreement supports consistently measurable within-model tail structure, not proof that all noise is absent or that the tail has behavioral importance. The registered verdict and original archival text are retained below.
+
 Date decided: 2026-08-06
 
 Status: **evaluable; verdict `run_specific_tail`** — and a **repaired-instrument
