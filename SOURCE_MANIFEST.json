@@ -16,8 +16,8 @@
     },
     {
       "file": "README.md",
-      "sha256": "a4e41cbd7e451346ea480aa13cade4329847a849f6b06582325ed7228df747bd",
-      "bytes": 4421
+      "sha256": "f9bb05ff6e4d56aef87ac0755c88720d9251741a50f2e4bba9e3b63b1306e731",
+      "bytes": 4568
     },
     {
       "file": "artifacts/effect_field_actionability.json",
@@ -340,6 +340,23 @@
       "bytes": 7590,
       "source_identity": "source://footprint-study/expansion/docs/direction_amplification_decision.md",
       "original_source_sha256": "bbb698eeb5a4ea016b9013afd83550ec83244b4c06cab8fdcffffbba142ff22b"
+    },
+    {
+      "file": "notes/later-controls/instrument-log-extract.md",
+      "sha256": "90ecce625976a92e67fffd9948635a8300d1a3830374df0e26c27793f79e5ac8",
+      "bytes": 10687,
+      "source_identity": "source://footprint-study/expansion/docs/instrument_log.md",
+      "original_source_sha256": "91ec535e317a9546c1c65206ab1d6a5cda8c4540d8ed15b5aafefbf79dc5274c",
+      "selected_entries": [
+        "I1",
+        "I2",
+        "I7",
+        "I8",
+        "I9",
+        "I13",
+        "I14"
+      ],
+      "transformation": "Abridged W1-only extract; see extraction notes in the document."
     },
     {
       "file": "notes/later-controls/matched_null_decision.md",
