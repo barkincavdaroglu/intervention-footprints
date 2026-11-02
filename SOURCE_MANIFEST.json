@@ -16,8 +16,8 @@
     },
     {
       "file": "README.md",
-      "sha256": "543ee575ea75229eadd787a1bc289a4f5c9f3379affd8b0f20b67d18341a5088",
-      "bytes": 4665
+      "sha256": "907a5bf1e292c4bc21920b01cf390306199b42229cb4aaa0ae780298e7ff3e63",
+      "bytes": 5328
     },
     {
       "file": "artifacts/effect_field_actionability.json",
@@ -347,11 +347,46 @@
       "transformation": "Public summary compiled 2026-11-01 from saved W1.a results and protocol; no original decision memo existed."
     },
     {
+      "file": "notes/later-controls/cross_layer_edges_decision.md",
+      "sha256": "31a7e6376ef69f30e4a3f166b847d757e4cfa7d8444b9d898716e5241450f029",
+      "bytes": 9034,
+      "source_identity": "source://footprint-study/expansion/docs/cross_layer_edges_decision.md",
+      "original_source_sha256": "33b36eefaaae4a64c4f2e70beb87e2687719f0af3f0feb3000393a8be5f159b8"
+    },
+    {
+      "file": "notes/later-controls/cross_layer_seed_stability_decision.md",
+      "sha256": "efeecf755957c7c7a13a7eb30c35fbc7d62955e337fba5cc877758e46975d144",
+      "bytes": 8467,
+      "source_identity": "source://footprint-study/expansion/docs/cross_layer_seed_stability_decision.md",
+      "original_source_sha256": "21be0d6a27ebfb37fdf5b99ee9408758d9589d0f1bd87ad720e88b7c417b1c7a"
+    },
+    {
       "file": "notes/later-controls/direction_amplification_decision.md",
       "sha256": "bbb698eeb5a4ea016b9013afd83550ec83244b4c06cab8fdcffffbba142ff22b",
       "bytes": 7590,
       "source_identity": "source://footprint-study/expansion/docs/direction_amplification_decision.md",
       "original_source_sha256": "bbb698eeb5a4ea016b9013afd83550ec83244b4c06cab8fdcffffbba142ff22b"
+    },
+    {
+      "file": "notes/later-controls/edge_tail_v2_decision.md",
+      "sha256": "95360fd8e07fbfe4d8a6749f3aa77c837c841b48089bf17bcbed77ab0157a185",
+      "bytes": 5960,
+      "source_identity": "source://footprint-study/expansion/docs/edge_tail_v2_decision.md",
+      "original_source_sha256": "a9e210dab9548e117d552a367241de898472c81b9552153996eb68ca2e59c875"
+    },
+    {
+      "file": "notes/later-controls/feature_basis_decision.md",
+      "sha256": "79947504c13a8a42f56c2019c1d52467a4537d148bc98988a82f6c1234636b67",
+      "bytes": 9517,
+      "source_identity": "source://footprint-study/expansion/docs/feature_basis_decision.md",
+      "original_source_sha256": "aadf59db72baac9ddc87c81c4af532e715a6d886aef255bacc3feddc5ba8b4b4"
+    },
+    {
+      "file": "notes/later-controls/functional_equivalence_decision.md",
+      "sha256": "3fafc55e640c7a6181d201dc75c03c508fd6ab7dd3117f7c895df361a199cacc",
+      "bytes": 7295,
+      "source_identity": "source://footprint-study/expansion/docs/functional_equivalence_decision.md",
+      "original_source_sha256": "7f77f59a390c05c6774314b0a6095e99a0a56bacbf8d08d93be731f89c80174c"
     },
     {
       "file": "notes/later-controls/instrument-log-extract.md",
