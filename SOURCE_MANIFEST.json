@@ -16,8 +16,8 @@
     },
     {
       "file": "README.md",
-      "sha256": "f9bb05ff6e4d56aef87ac0755c88720d9251741a50f2e4bba9e3b63b1306e731",
-      "bytes": 4568
+      "sha256": "543ee575ea75229eadd787a1bc289a4f5c9f3379affd8b0f20b67d18341a5088",
+      "bytes": 4665
     },
     {
       "file": "artifacts/effect_field_actionability.json",
@@ -333,6 +333,18 @@
       "bytes": 6789,
       "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/docs/topology_gate1_protocol.md",
       "original_source_sha256": "2b2e9247814db6328b529d3b00d39ef99cbeafb9d69eae8e11780f19702b1b78"
+    },
+    {
+      "file": "notes/later-controls/basis_dependence_decision.md",
+      "sha256": "f08e30a1bcce3988bd21258361c261d803c7311c86e93e8608efafd1104378ad",
+      "bytes": 7132,
+      "source_identity": "source://footprint-study/expansion/artifacts/basis_dependence.json",
+      "original_source_sha256": "bdcf33df32a4708e00b34bf0ee112afd02496ca30e80da5e41b3fe8a4962d86e",
+      "supporting_source_sha256": {
+        "expansion/docs/basis_dependence_protocol.md": "0331106549c50a9bba7958b0ffe610a14a055be6be36bed65c9c22059a20ffbb",
+        "expansion/docs/hypothesis_ledger.md": "971e31c7d41e6b69536cf1762b99787347330e0fd1caca207521b9dacf4948e9"
+      },
+      "transformation": "Public summary compiled 2026-11-01 from saved W1.a results and protocol; no original decision memo existed."
     },
     {
       "file": "notes/later-controls/direction_amplification_decision.md",

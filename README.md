@@ -38,7 +38,7 @@ This regenerates the manuscript’s hypothesis diagram and final-holdout effect/
 - `configs/`: frozen dataset, model, and experiment configurations.
 - `docs/`: scientific protocols, decisions, and limits on the claims, including unsuccessful repair and topology comparisons.
 - `artifacts/`: numerical reports used for the main-study summaries.
-- `notes/later-controls/`: later matched-direction and amplification decision memos, plus a [seven-entry instrument log extract](notes/later-controls/instrument-log-extract.md) documenting failures and corrections in those studies. The extension experiments’ raw data and execution code are outside this package.
+- `notes/later-controls/`: the [channel-basis comparison](notes/later-controls/basis_dependence_decision.md), later matched-direction and amplification decision memos, and a [seven-entry instrument log extract](notes/later-controls/instrument-log-extract.md) documenting failures and corrections in those studies. The extension experiments’ full reports, raw data, and execution code are outside this package.
 - `paper/make_figures.py`: the figure generator.
 - `SOURCE_MANIFEST.json` and `verify.py`: current file hashes and source provenance.
 
