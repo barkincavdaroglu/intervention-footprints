@@ -2,6 +2,10 @@
 
 Code, frozen checkpoint-level results, and protocols for classwise effect alignment, joint ablation, and learned repair in small graph neural networks.
 
+## Published posts
+
+- [What an ablation can resolve](https://www.barkincavdar.com/work/what-an-ablation-can-resolve/) - [archived PDF, November 1, 2026](paper/what-an-ablation-can-resolve-2026-11-01.pdf). The [publication record](paper/PUBLICATION_RECORD.md) gives the website publication time, later PDF export time, and file fingerprints.
+
 ## Reproduce the reported summaries
 
 Python 3.11 or newer is sufficient for the integrity check and numerical summary. No extra packages, model checkpoints, or dataset downloads are needed for these two commands:

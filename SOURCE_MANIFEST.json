@@ -16,8 +16,8 @@
     },
     {
       "file": "README.md",
-      "sha256": "75c034cfa99091f112b87406a474c86e8ce761047e21753f70e40fc8a1963fe6",
-      "bytes": 5710
+      "sha256": "936e56eecd987e492d637785f7a13ff0e65a648ef4ea94c1a8d47a2b47132f69",
+      "bytes": 6052
     },
     {
       "file": "artifacts/effect_field_actionability.json",
@@ -432,11 +432,25 @@
       "original_source_sha256": "bebf4794f593823f153285dfb4190def6ab822edabae37b62c2770c0aea638e1"
     },
     {
+      "file": "paper/PUBLICATION_RECORD.md",
+      "sha256": "56792f43e0f14b3667ac2c73d8fddc60dcac291ec5680b41bfa1538dd98cdd7f",
+      "bytes": 1480
+    },
+    {
       "file": "paper/make_figures.py",
       "sha256": "0092553d10f723934bd70293050b4056df5354cab20bae3499e9ea9ffca15ad5",
       "bytes": 9626,
       "source_identity": "source://footprint-study/paper_a_release/code/gnn-effect-fields/paper/make_figures.py",
       "original_source_sha256": "0092553d10f723934bd70293050b4056df5354cab20bae3499e9ea9ffca15ad5"
+    },
+    {
+      "file": "paper/what-an-ablation-can-resolve-2026-11-01.pdf",
+      "sha256": "fdcd4ed1168baf270c997830ee8c7ecabbf45929016637125c7d1861b84ce41a",
+      "bytes": 3500006,
+      "source_identity": "https://www.barkincavdar.com/work/what-an-ablation-can-resolve/",
+      "source_html_sha256": "9f2344e79e691f641d209a10ad9bf82a6a4a4ce792ea97a8a0602cd977305b76",
+      "website_published_at_utc": "2026-11-02T01:17:20.340Z",
+      "pdf_exported_at_utc": "2026-11-02T01:22:37.620472+00:00"
     },
     {
       "file": "pyproject.toml",
